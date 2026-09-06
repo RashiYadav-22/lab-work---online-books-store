@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Catalogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            vertical-align: middle;
+        }
+
+        .header-top {
+            background-color:darkgray;
+            font-weight: bold;
+        }
+
+        .header-logo {
+            width: 15%;
+        }
+
+        .header-title {
+            width: 85%;
+            font-size: 1.2em;
+        }
+
+        .nav-bar {
+            background-color:cadetblue;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            width: 50%;
+            text-align: left;
+            padding-left: 70px;
+            vertical-align: top;
+            background-color: ivory;
+           line-height: 40cqh;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .cover-col {
+            width: 15%;
+        }
+
+        .details-col {
+            width: 35%;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .price-col {
+            width: 15%;
+            font-weight: bold;
+        }
+
+        .action-col {
+            width: 20%;
+        }
+
+        .book-cover {
+            width: 50px;
+            height: 30px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+
+        .cart-btn {
+            background: linear-gradient(to bottom, #ffe100, #fcae00);
+            border: 1px solid #a87200;
+            border-radius: 5px;
+            padding: 6px 12px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cart-btn:hover {
+            background: linear-gradient(to bottom, #fcae00, #ffe100);
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr class="header-top">
+            <td class="header-logo"><img src="glb.jpg" alt="GL Bajaj logo" class="logo-img"></td>
+            <td colspan="4" class="header-title">GL BAJAJ INSTITUTE OF TECHNOLOGY: ONLINE BOOK STORE</td>
+        </tr>
+
+        <tr class="nav-bar">
+            <td>Home</td>
+            <td style="width: 20%;">Login</td>
+            <td style="width: 25%;">Registration</td>
+            <td style="width: 20%;">Catalogue</td>
+            <td style="width: 20%;">Cart</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4" class="sidebar">
+                <ul>
+                    <li>CSE Books</li>
+                    <li>ECE Books</li>
+                    <li>EEE Books</li>
+                    <li>CIVIL Books</li>
+                </ul>
+            </td>
+            <td class="cover-col">
+                <img src="CSE.jpeg">
+            <td class="details-col">
+                <strong>Book:</strong> XMLBible<br>
+                <strong>Author:</strong> Winston<br>
+                <strong>Publication:</strong> Wiely
+            </td>
+            <td class="price-col">$40.5</td>
+            <td class="action-col">
+                <button class="cart-btn">🛒 Add to cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cover-col">
+                <img src="ECE.jpg">
+            </td>
+            <td class="details-col">
+                <strong>Book:</strong> AI<br>
+                <strong>Author:</strong> S.Russel<br>
+                <strong>Publication:</strong> Princetonhall
+            </td>
+            <td class="price-col">$63</td>
+            <td class="action-col">
+                <button class="cart-btn">🛒 Add to cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cover-col">
+                <img src="EEE.jpeg">
+            </td>
+            <td class="details-col">
+                <strong>Book:</strong> Java 2<br>
+                <strong>Author:</strong> Watson<br>
+                <strong>Publication:</strong> BPBpublications
+            </td>
+            <td class="price-col">$35.5</td>
+            <td class="action-col">
+                <button class="cart-btn">🛒 Add to cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cover-col">
+                <img src="CIVIL.jpeg">
+            </td>
+            <td class="details-col">
+                <strong>Book:</strong> HTML in 24 hours<br>
+                <strong>Author:</strong> Sam Peter<br>
+                <strong>Publication:</strong> Sampublication
+            </td>
+            <td class="price-col">$50</td>
+            <td class="action-col">
+                <button class="cart-btn">🛒 Add to cart</button>
+            </td>
+        </tr>
+    </table>
+
+<footer>
+Created by <span>RASHI YADAV</span> | Roll no. <span>2501920110297</span>
+</footer>
+</body>
+</html>
